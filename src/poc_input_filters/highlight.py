@@ -75,7 +75,9 @@ def _display_char(finding: Finding) -> str:
 
 
 def render_highlight(
-    text: str, findings: Iterable[Finding], enabled_groups: Iterable[str]
+    text: str,
+    findings: Iterable[Finding],
+    enabled_groups: Iterable[str],
 ) -> str:
     index_map = {finding.index: finding for finding in findings}
     enabled = set(enabled_groups)
