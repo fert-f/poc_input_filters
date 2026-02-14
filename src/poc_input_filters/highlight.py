@@ -6,13 +6,13 @@ from html import escape
 from .filters import Finding
 
 GROUP_COLORS: dict[str, tuple[str, str]] = {
-    "zero_width": ("#f94144", "#ffffff"),
-    "bidi_control": ("#f3722c", "#ffffff"),
-    "tag_block": ("#f8961e", "#111111"),
-    "control_or_format": ("#f9c74f", "#111111"),
-    "non_breaking_space": ("#90be6d", "#111111"),
-    "combining_mark": ("#577590", "#ffffff"),
-    "non_ascii": ("#4d908e", "#ffffff"),
+    "zero_width": ("#e85d5b", "#0b0b0b"),
+    "bidi_control": ("#f28c4b", "#0b0b0b"),
+    "tag_block": ("#f1b24a", "#0b0b0b"),
+    "control_or_format": ("#e6c453", "#0b0b0b"),
+    "non_breaking_space": ("#7fc985", "#0b0b0b"),
+    "combining_mark": ("#5f7aa8", "#f6f6f6"),
+    "non_ascii": ("#5aa7a0", "#0b0b0b"),
 }
 
 DISPLAY_REPLACEMENTS: dict[str, str] = {
@@ -43,16 +43,17 @@ def highlight_css() -> str:
         "  white-space: pre-wrap;",
         "  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,",
         '    "Liberation Mono", "Courier New", monospace;',
-        "  background: #f6f4ef;",
-        "  border: 1px solid #e0dbcf;",
+        "  background: var(--secondary-background-color, #f6f4ef);",
+        "  border: 1px solid rgba(255, 255, 255, 0.08);",
         "  padding: 12px;",
         "  border-radius: 10px;",
+        "  color: var(--text-color, #111111);",
         "}",
         ".flag {",
         "  border-radius: 4px;",
         "  padding: 0 2px;",
         "  margin: 0 1px;",
-        "  border: 1px solid rgba(0, 0, 0, 0.15);",
+        "  border: 1px solid rgba(0, 0, 0, 0.25);",
         "}",
     ]
 
