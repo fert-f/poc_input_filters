@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checking and lint caches
+.mypy_cache/
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

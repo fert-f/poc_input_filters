@@ -1,0 +1,15 @@
+[project]
+name = "poc-input-filters"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "clean-text>=0.7.1",
+    "ftfy>=6.3.1",
+    "regex>=2026.1.15",
+    "streamlit>=1.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=3.7.0",
+]
